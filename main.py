@@ -1,7 +1,7 @@
-import requests
 from concurrent.futures import ThreadPoolExecutor
 import time
 import random
+import requests
 
 # Function to send GET request
 def send_get_request(url):
