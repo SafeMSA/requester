@@ -12,11 +12,11 @@ def send_get_request(url):
         print(f"Error: {e}")
 
 while True:
-    time.sleep(randrange(10, 30))
+    time.sleep(4)
 
     # List of URLs to send GET requests to
-    urls = ['http://localhost:9092'] * randrange(98, 100)
+    urls = ['http://localhost:9092'] * 5
 
     # Use ThreadPoolExecutor to send requests in parallel
-    with ThreadPoolExecutor(max_workers=10) as executor:
+    with ThreadPoolExecutor(max_workers=5) as executor:
         executor.map(send_get_request, urls)
