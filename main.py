@@ -12,7 +12,7 @@ def send_get_request(url):
         print(f"Error: {e}")
 
 while True:
-    time.sleep(4)
+    time.sleep(1)
 
     # List of URLs to send GET requests to
     urls = ['http://localhost:9092'] * 5
